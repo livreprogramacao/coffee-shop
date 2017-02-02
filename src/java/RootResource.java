@@ -1,6 +1,5 @@
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import javax.ws.rs.Path;
 
 /*
 * Video Course — REST as in Hypermedia with Java
@@ -19,12 +18,11 @@ import javax.ws.rs.core.Application;
 *
 * I hope you will enjoy this video course, thanks for watching!
  */
-
 /**
  *
  * @author user
  */
-@ApplicationPath("resources")
-public class JAXRSConfiguration extends Application {
-    // Nothing to configure
+@Path("/")
+public class RootResource {
+
 }
