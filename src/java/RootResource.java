@@ -1,5 +1,9 @@
 
+import java.util.List;
+import javax.enterprise.inject.Produces;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
 
 /*
 * Video Course — REST as in Hypermedia with Java
@@ -23,6 +27,11 @@ import javax.ws.rs.Path;
  * @author user
  */
 @Path("/")
+@Produces(MediaType.APPLICATION_JSON)
 public class RootResource {
 
+    @POST
+    public List<String> getCoffeeTypes() {
+        return null;
+    }
 }
