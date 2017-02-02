@@ -1,10 +1,6 @@
 
+import java.util.Arrays;
 import java.util.List;
-import javax.inject.Inject;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 
 /*
 * Video Course — REST as in Hypermedia with Java
@@ -27,17 +23,10 @@ import javax.ws.rs.core.MediaType;
  *
  * @author user
  */
-@Path("/")
-@Produces(MediaType.APPLICATION_JSON)
-public class RootResource {
+public class CoffeeShop {
 
-    @Inject
-    CoffeeShop coffeeShop;
-
-    @POST
-    @Path("getCoffeeTypes")
-    public List<String> getCoffeeTypes() {
-        return coffeeShop.getCoffeeTypes();
+    List<String> getCoffeeTypes() {
+        return Arrays.asList("Espresso", "Pour-over", "French-press", "Latte");
     }
 
 }
