@@ -25,6 +25,9 @@ import java.util.List;
  */
 public class CoffeeShop {
 
+    public CoffeeShop() {
+    }
+
     List<String> getCoffeeTypes() {
         return Arrays.asList("Espresso", "Pour-over", "French-press", "Latte");
     }
